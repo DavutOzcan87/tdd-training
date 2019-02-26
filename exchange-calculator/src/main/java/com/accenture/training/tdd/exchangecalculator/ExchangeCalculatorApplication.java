@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan(basePackages = "com.accenture.training.tdd.exchangecalculator")
 @SpringBootApplication
 public class ExchangeCalculatorApplication {
 

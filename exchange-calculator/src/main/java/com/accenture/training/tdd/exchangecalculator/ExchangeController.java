@@ -10,7 +10,7 @@ public class ExchangeController {
 
 
 
-    @GetMapping("exchanges")
+    @GetMapping("/exchanges")
     public double calculateEchangeRate(@RequestParam double amount , @RequestParam String currency){
         return 12.5;
     }
