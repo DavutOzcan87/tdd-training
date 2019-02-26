@@ -11,4 +11,6 @@ import java.util.List;
 @Repository
 public interface ExchangeRateRepository extends CrudRepository<ExchangeRate , Long> {
     List<ExchangeRate> findAll();
+
+    ExchangeRate findByCurrency(String currency);
 }

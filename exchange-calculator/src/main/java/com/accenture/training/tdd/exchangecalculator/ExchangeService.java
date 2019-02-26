@@ -9,10 +9,15 @@ import java.util.List;
 public class ExchangeService {
 
     @Autowired
-    ExchangeRateRepository repository;
+    private ExchangeRateRepository repository;
 
 
     List<ExchangeRate> findAll(){
         return repository.findAll();
+    }
+
+    public double calcuateExchange(double amount, String currency) {
+        ExchangeRate er = repository.findByCurrency(currency);
+        return amount * er.rate;
     }
 }
