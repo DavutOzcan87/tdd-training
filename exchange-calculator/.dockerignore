@@ -1,0 +1,10 @@
+target/**
+src/**
+
+.mvn/**
+
+mvn*
+pom.xml
+.gitignore
+*.iml
+*.md
